@@ -15,34 +15,71 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red,
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        crossAxisAlignment: CrossAxisAlignment.start,
+      body: Row(
         children: [
-          Row(
-            children: [
-              Text('hello'),
-              Text('world'),
-            ],
-            mainAxisAlignment: MainAxisAlignment.center,
+          Expanded(
+              flex: 3,
+              child: Image.asset('assets/images/guitar-4677875_640.jpg')
           ),
-          Container(
-            padding: EdgeInsets.all(20),
-            color: Colors.cyan,
-            child: Text('one'),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.all(30),
+              color: Colors.cyan,
+              child: Text('1'),
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(30),
-            color: Colors.pinkAccent,
-            child: Text('two'),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.all(30),
+              color: Colors.pinkAccent,
+              child: Text('2'),
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(40),
-            color: Colors.amber,
-            child: Text('three'),
-          )
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.all(30),
+              color: Colors.amber,
+              child: Text('3'),
+            ),
+          ),
         ],
       ),
+      // body: Column(
+      //   mainAxisAlignment: MainAxisAlignment.end,
+      //   crossAxisAlignment: CrossAxisAlignment.start,
+      //   children: [
+      //     Row(
+      //       children: [
+      //         Text('hello'),
+      //         Text('world'),
+      //       ],
+      //       mainAxisAlignment: MainAxisAlignment.center,
+      //     ),
+      //     Container(
+      //       child: Padding(
+      //         padding: const EdgeInsets.all(8.0),
+      //         child: Container(
+      //           padding: EdgeInsets.all(30),
+      //           color: Colors.pinkAccent,
+      //           child: Text('two'),
+      //         ),
+      //       ),
+      //     ),
+      //     Container(
+      //       padding: EdgeInsets.all(40),
+      //       color: Colors.amber,
+      //       child: Text('three'),
+      //     ),
+      //     Container(
+      //       padding: EdgeInsets.all(20),
+      //       color: Colors.cyan,
+      //       child: Text('one'),
+      //     )
+      //   ],
+      // ),
       // body: Row(
       //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       //   crossAxisAlignment: CrossAxisAlignment.start,

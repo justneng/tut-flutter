@@ -18,8 +18,8 @@ class Home extends StatelessWidget {
       body: Row(
         children: [
           Expanded(
-              flex: 3,
-              child: Image.asset('assets/images/guitar-4677875_640.jpg')
+              flex: 3,                                                                                                                  
+              child: Image.asset('assets/images/guitar-4677875_640.jpg')                                                                                      
           ),
           Expanded(
             flex: 1,
